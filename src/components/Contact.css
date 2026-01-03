@@ -1,0 +1,143 @@
+.contact-section {
+    padding: 8rem 0;
+    background-color: var(--color-white);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.contact-info {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 3rem;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.info-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-old-rose);
+}
+
+.info-card p {
+    color: #999;
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+
+.info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-link-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.contact-link-item:hover {
+    transform: translateX(10px);
+}
+
+.contact-link-item:hover .info-icon {
+    background-color: var(--color-old-rose);
+    color: var(--color-white);
+}
+
+.info-icon {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(192, 128, 129, 0.1);
+    color: var(--color-old-rose);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.info-item h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.2rem;
+    color: #eee;
+}
+
+.info-item p {
+    margin-bottom: 0;
+    color: var(--color-white);
+    font-weight: 500;
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-black);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1rem;
+    border: 1px solid #eee;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-old-rose);
+    background-color: var(--color-white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.2rem;
+}
+
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        padding: 2rem;
+    }
+}

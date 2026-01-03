@@ -1,0 +1,124 @@
+:root {
+  --color-black: #111111;
+  --color-white: #ffffff;
+  --color-old-rose: #C08081;
+  /* Deep Old Rose */
+  --color-old-rose-light: #E8D0D2;
+  /* Soft Old Rose */
+  --color-bg: var(--color-white);
+  --color-text: var(--color-black);
+
+  --font-main: 'Outfit', sans-serif;
+
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-old-rose);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-black);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 1px solid var(--color-black);
+  background: transparent;
+  color: var(--color-black);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-lg {
+  margin-bottom: var(--spacing-lg);
+}
+
+.mt-lg {
+  margin-top: var(--spacing-lg);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}

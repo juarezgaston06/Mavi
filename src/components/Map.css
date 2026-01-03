@@ -1,0 +1,28 @@
+.map-section {
+    padding: 8rem 0;
+    background-color: #fafafa;
+}
+
+.address-text {
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.map-wrapper {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+    .map-section {
+        padding: 5rem 0;
+    }
+
+    .map-wrapper iframe {
+        height: 350px;
+    }
+}
