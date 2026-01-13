@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import CartDrawer from './components/CartDrawer'
 import Course from './components/Course'
 import WhatsAppFloat from './components/WhatsAppFloat'
+import CartFloat from './components/CartFloat'
 import { CartProvider } from './context/CartContext'
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Footer />
         <CartDrawer />
         <WhatsAppFloat />
+        <CartFloat />
       </div>
     </CartProvider>
   )

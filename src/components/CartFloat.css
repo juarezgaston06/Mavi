@@ -1,0 +1,59 @@
+.cart-float {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .cart-float {
+        display: flex;
+        position: fixed;
+        bottom: 85px;
+        /* Above WhatsApp (20px + 55px + 10px spacing) */
+        right: 20px;
+        background-color: var(--color-black);
+        color: white;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        cursor: pointer;
+        animation: float-cart 3s ease-in-out infinite;
+    }
+
+    @keyframes float-cart {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-5px);
+        }
+    }
+
+    .cart-float:active {
+        transform: scale(0.9);
+    }
+
+    .cart-badge-float {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background-color: var(--color-old-rose);
+        color: white;
+        font-size: 0.75rem;
+        min-width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        padding: 0 5px;
+        border: 2px solid white;
+    }
+}
