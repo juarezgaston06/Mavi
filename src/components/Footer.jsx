@@ -1,5 +1,6 @@
 import React from 'react';
 import { Instagram, MessageCircle, Mail } from 'lucide-react';
+import logo from '../assets/logo_mavi.jpg';
 
 const Footer = () => {
     return (
@@ -10,11 +11,12 @@ const Footer = () => {
             marginTop: 'auto',
             backgroundColor: 'var(--color-bg)'
         }}>
-            <h3 style={{
-                fontSize: '1.5rem',
-                marginBottom: '2rem',
-                fontWeight: 700
-            }}>Mavi.</h3>
+            <img src={logo} alt="Mavi" style={{
+                height: '80px',
+                width: 'auto',
+                borderRadius: '50%',
+                marginBottom: '2rem'
+            }} />
 
             <div style={{
                 display: 'flex',
@@ -34,7 +36,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                    href="https://wa.me/5493543618202"
+                    href="https://wa.me/5493543636167"
                     target="_blank"
                     rel="noreferrer"
                     style={{ color: 'var(--color-black)', transition: 'color 0.3s' }}

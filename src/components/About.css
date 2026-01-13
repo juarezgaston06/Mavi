@@ -144,3 +144,14 @@
         padding: 1.5rem;
     }
 }
+
+.about-cta {
+    margin-top: 3rem;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.about-cta .btn {
+    padding: 1rem 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}

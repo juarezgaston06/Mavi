@@ -160,3 +160,32 @@
         gap: 0.5rem;
     }
 }
+
+.product-options {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.product-options label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #666;
+}
+
+.length-selector {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+.length-selector:focus {
+    border-color: var(--color-old-rose);
+}

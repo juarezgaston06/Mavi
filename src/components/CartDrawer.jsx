@@ -8,7 +8,7 @@ const CartDrawer = () => {
 
     const handleCheckout = () => {
         const itemsText = cart
-            .map((item) => `- ${item.name} (x${item.quantity})`)
+            .map((item) => `- ${item.name}${item.selectedOption ? ` (${item.selectedOption})` : ''} (x${item.quantity})`)
             .join('\n');
 
         const totalText = `Total: $${cartTotal.toLocaleString()}`;
@@ -17,7 +17,7 @@ const CartDrawer = () => {
         );
 
         // Tu número de WhatsApp configurado
-        const phoneNumber = "5493543618202";
+        const phoneNumber = "5493543636167";
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
     };
 
@@ -43,20 +43,25 @@ const CartDrawer = () => {
                         </div>
                     ) : (
                         cart.map((item) => (
-                            <div key={item.id} className="cart-item">
+                            <div key={`${item.id}-${item.selectedOption}`} className="cart-item">
                                 <div className="cart-item-img">
                                     <img src={item.img} alt={item.name} />
                                 </div>
                                 <div className="cart-item-details">
                                     <h3>{item.name}</h3>
+                                    {item.selectedOption && (
+                                        <p className="item-option">
+                                            {item.category === 'pestañas' ? `Largo: ${item.selectedOption}` : item.selectedOption}
+                                        </p>
+                                    )}
                                     <p className="item-price">{item.price}</p>
                                     <div className="quantity-controls">
-                                        <button onClick={() => updateQuantity(item.id, -1)}><Minus size={14} /></button>
+                                        <button onClick={() => updateQuantity(item.id, item.selectedOption, -1)}><Minus size={14} /></button>
                                         <span>{item.quantity}</span>
-                                        <button onClick={() => updateQuantity(item.id, 1)}><Plus size={14} /></button>
+                                        <button onClick={() => updateQuantity(item.id, item.selectedOption, 1)}><Plus size={14} /></button>
                                     </div>
                                 </div>
-                                <button className="remove-item" onClick={() => removeFromCart(item.id)}>
+                                <button className="remove-item" onClick={() => removeFromCart(item.id, item.selectedOption)}>
                                     <Trash2 size={18} />
                                 </button>
                             </div>

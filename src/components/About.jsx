@@ -38,14 +38,8 @@ const About = () => {
                                 <p>Productos testeados bajo los más altos estándares.</p>
                             </div>
                         </div>
-                        <div className="value-item">
-                            <span className="value-dot"></span>
-                            <div>
-                                <h4>Branding Exclusivo</h4>
-                                <p>Diseños que elevan la imagen de tu gabinete.</p>
-                            </div>
-                        </div>
                     </div>
+
                 </div>
             </div>
         </section>

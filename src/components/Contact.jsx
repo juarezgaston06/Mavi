@@ -40,13 +40,13 @@ const Contact = () => {
                                 </div>
 
                                 <div className="info-item">
-                                    <a href="https://wa.me/5493543618202" target="_blank" rel="noreferrer" className="contact-link-item">
+                                    <a href="https://wa.me/5493543636167" target="_blank" rel="noreferrer" className="contact-link-item">
                                         <div className="info-icon">
                                             <Phone size={20} />
                                         </div>
                                         <div>
                                             <h4>WhatsApp</h4>
-                                            <p>+54 9 3543 61-8202</p>
+                                            <p>+54 9 3543 63-6167</p>
                                         </div>
                                     </a>
                                 </div>

@@ -1,0 +1,233 @@
+.course-page {
+    background-color: var(--color-white);
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+
+.course-header {
+    background: linear-gradient(rgba(255, 245, 245, 0.8), rgba(255, 255, 255, 1)), url('/products/lifting/Bigudies Miss Queen Curva L - $3.500.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+    text-align: left;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--color-black);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.back-link:hover {
+    opacity: 1;
+}
+
+.header-content {
+    max-width: 800px;
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+    margin: 1rem 0 2rem;
+    line-height: 1.1;
+    color: var(--color-black);
+}
+
+.header-content .description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Features */
+.course-features {
+    padding: 5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+}
+
+.feature-card .icon {
+    width: 48px;
+    height: 48px;
+    color: var(--color-old-rose);
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Syllabus */
+.course-syllabus {
+    padding: 8rem 0;
+    background-color: #fcfcfc;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-old-rose);
+    margin: 0 auto;
+}
+
+.syllabus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2.5rem;
+}
+
+.module-card {
+    background: var(--color-white);
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.module-card:hover {
+    transform: translateY(-5px);
+}
+
+.module-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.module-number {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-old-rose);
+    background: rgba(199, 149, 149, 0.1);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+}
+
+.module-header h3 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.module-items {
+    list-style: none;
+    padding: 0;
+}
+
+.module-items li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.module-items li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 1px;
+    background-color: var(--color-old-rose);
+}
+
+/* CTA Box */
+.course-cta {
+    padding-bottom: 8rem;
+    background-color: #fcfcfc;
+}
+
+.cta-box {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 5rem;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.cta-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: inherit;
+}
+
+.cta-box p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+}
+
+.btn-large {
+    padding: 1.2rem 3rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+    .features-grid {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .syllabus-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-box {
+        padding: 3rem 1.5rem;
+    }
+
+    .cta-box h2 {
+        font-size: 2rem;
+    }
+}
