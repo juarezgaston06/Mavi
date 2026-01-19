@@ -4,7 +4,7 @@ import './Products.css';
 
 const productsData = [
     // Adhesivos
-    { id: 1, name: 'Adhesivo Zaphiria Circe 3grs', price: '$18.000', img: '/products/adhesivos/Adhesivo Zaphiria Circe 3grs - $12.000.jpeg', category: 'adhesivos' },
+    { id: 1, name: 'Adhesivo Zaphiria Circe 3grs', price: '$24.300', img: '/products/adhesivos/Adhesivo Zaphiria Circe 3grs - $12.000.jpeg', category: 'adhesivos' },
 
     // Pinzas
     { id: 2, name: 'Pinza Nagaraku N-05', price: '$7.500', img: '/products/pinzas/Pinza Nagaraku N-05 - $7.500.jpeg', category: 'pinzas' },
