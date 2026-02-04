@@ -45,8 +45,8 @@ const productsData = [
     { id: 33, name: 'Zaphiria spire mix', price: '$9.000', img: '/products/pestañas/zaphiria anime.jpeg', category: 'pestañas tecnologicas' },
     { id: 34, name: 'Zaphiria spike mix', price: '$10.500', img: '/products/pestañas/zaphiria wispy.jpeg', category: 'pestañas tecnologicas' },
     { id: 35, name: 'Nagaraku 0.07 D', price: '$5.250', img: '/products/pestañas/naga 0.007 d 10mm.webp', category: 'pestañas' },
-    { id: 38, name: 'Big box YY mix 54 lineas', price: '$23.000', img: '/products/pestañas/YY.jpeg', category: 'pestañas tecnologicas' },
-    { id: 39, name: 'Big box 3D mix 54 lineas', price: '$26.000', img: '/products/pestañas/3d.jpeg', category: 'pestañas tecnologicas' },
+    { id: 38, name: 'Big box YY mix 54 lineas', price: '$25.000', img: '/products/pestañas/YY.jpeg', category: 'pestañas tecnologicas' },
+    { id: 39, name: 'Big box 3D mix 54 lineas', price: '$28.000', img: '/products/pestañas/3d.jpeg', category: 'pestañas tecnologicas' },
 ];
 
 const categories = [
