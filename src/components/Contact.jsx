@@ -40,7 +40,7 @@ const Contact = () => {
                                 </div>
 
                                 <div className="info-item">
-                                    <a href="https://wa.me/5493543636167" target="_blank" rel="noreferrer" className="contact-link-item">
+                                    <a href="https://wa.me/5493543636167" target="_blank" rel="noreferrer" className="contact-link-item" aria-label="Contactar por WhatsApp">
                                         <div className="info-icon">
                                             <Phone size={20} />
                                         </div>
@@ -52,7 +52,7 @@ const Contact = () => {
                                 </div>
 
                                 <div className="info-item">
-                                    <a href="https://www.instagram.com/mavi.beautystudio.ok?igsh=OTF2bHk2YmM0OXQx" target="_blank" rel="noreferrer" className="contact-link-item">
+                                    <a href="https://www.instagram.com/mavi.beautystudio.ok?igsh=OTF2bHk2YmM0OXQx" target="_blank" rel="noreferrer" className="contact-link-item" aria-label="Seguir en Instagram">
                                         <div className="info-icon">
                                             <Instagram size={20} />
                                         </div>

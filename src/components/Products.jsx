@@ -81,19 +81,31 @@ const ProductCard = ({ product, addToCart }) => {
     const categoryName = categories.find(c => c.id === product.category)?.name || product.category;
 
     return (
-        <div className="product-card animate-fade-in">
+        <div className="product-card animate-fade-in" itemScope itemType="https://schema.org/Product">
             <div className="product-image-wrapper">
-                <img src={product.img} alt={product.name} loading="lazy" />
+                <img src={product.img} alt={product.name} loading="lazy" itemProp="image" />
                 <div className="product-overlay">
-                    <button className="add-to-cart" onClick={handleAddToCart}>
+                    <button
+                        className="add-to-cart"
+                        onClick={handleAddToCart}
+                        aria-label={`Añadir ${product.name} al carrito`}
+                    >
                         Añadir al carrito
                     </button>
                 </div>
             </div>
             <div className="product-info">
-                <span className="product-category">{categoryName}</span>
-                <h3 className="product-name">{product.name}</h3>
-                <p className="product-price">{product.price}</p>
+                <span className="product-category" itemProp="category">{categoryName}</span>
+                <h3 className="product-name" itemProp="name">{product.name}</h3>
+                <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
+                    <p className="product-price">
+                        <span itemProp="priceCurrency" content="ARS">$</span>
+                        <span itemProp="price" content={product.price.replace('$', '').replace('.', '')}>
+                            {product.price}
+                        </span>
+                    </p>
+                    <link itemProp="availability" href="https://schema.org/InStock" />
+                </div>
 
                 {isLash && (
                     <div className="product-options">
@@ -103,6 +115,7 @@ const ProductCard = ({ product, addToCart }) => {
                             value={selectedOption}
                             onChange={(e) => setSelectedOption(e.target.value)}
                             className="length-selector"
+                            aria-label={`Seleccionar largo para ${product.name}`}
                         >
                             {lengths.map(len => (
                                 <option key={len} value={len}>{len}</option>
@@ -119,6 +132,7 @@ const ProductCard = ({ product, addToCart }) => {
                             value={selectedOption}
                             onChange={(e) => setSelectedOption(e.target.value)}
                             className="length-selector"
+                            aria-label={`Seleccionar paso para ${product.name}`}
                         >
                             {steps.map(step => (
                                 <option key={step} value={step}>{step}</option>
@@ -127,6 +141,9 @@ const ProductCard = ({ product, addToCart }) => {
                     </div>
                 )}
             </div>
+            {/* Meta tags hidden for detailed programmatic access */}
+            <meta itemProp="brand" content="Mavi" />
+            <meta itemProp="description" content={`Insumo profesional de estética: ${product.name} - Categoría: ${categoryName}`} />
         </div>
     );
 };

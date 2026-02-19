@@ -28,6 +28,7 @@ const Footer = () => {
                     href="https://www.instagram.com/mavi.beautystudio.ok?igsh=OTF2bHk2YmM0OXQx"
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="Instagram de Mavi"
                     style={{ color: 'var(--color-black)', transition: 'color 0.3s' }}
                     onMouseOver={(e) => e.currentTarget.style.color = 'var(--color-old-rose)'}
                     onMouseOut={(e) => e.currentTarget.style.color = 'var(--color-black)'}
@@ -39,6 +40,7 @@ const Footer = () => {
                     href="https://wa.me/5493543636167"
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="WhatsApp de Mavi"
                     style={{ color: 'var(--color-black)', transition: 'color 0.3s' }}
                     onMouseOver={(e) => e.currentTarget.style.color = 'var(--color-old-rose)'}
                     onMouseOut={(e) => e.currentTarget.style.color = 'var(--color-black)'}

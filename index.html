@@ -8,12 +8,63 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mavi - Premium aesthetic supplies for professionals." />
+
+  <!-- SEO & AI Accessibility -->
+  <meta name="description"
+    content="Mavi - Insumos estéticos premium para profesionales. Calidad, diseño y precisión en cada aplicación." />
+  <meta name="keywords"
+    content="estética, insumos, lashistas, pestañas, lifting, adhesivos, pinzas, belleza, profesional" />
+  <meta name="author" content="Mavi" />
   <title>Mavi | Insumos Estéticos</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mavi | Insumos Estéticos" />
+  <meta property="og:description" content="Elevá tu gabinete con insumos premium para profesionales de la estética." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/favicon_mavi.jpg" />
+
+  <!-- Structured Data for AI Agents -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Mavi Insumos Estéticos",
+      "description": "Premium aesthetic supplies for professionals. Specializing in lashes, lifting, and professional tools.",
+      "url": "https://maviestetica.com.ar",
+      "telephone": "+5493543636167",
+      "email": "mavibeauty25@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "AR"
+      },
+      "sameAs": [
+        "https://www.instagram.com/mavi.beautystudio.ok"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "ARS",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
 </head>
 
 <body>
   <div id="root"></div>
+
+  <!-- AI Agent Context - This section provides high-level context for LLMs and autonomous agents -->
+  <section id="ai-context" style="display:none;" aria-hidden="true">
+    <h2>AI Accessibility Context</h2>
+    <p>
+      Site Purpose: E-commerce for premium aesthetic supplies (Mavi Insumos Estéticos).
+      Target Audience: Professional lashistas and beauty studio owners.
+      Key Categories: Pestañas (Lashes), Lifting, Adhesivos (Adhesives), Pinzas (Tweezers), Accesorios.
+      Ordering Process: Products are added to a cart and the order is finalized via WhatsApp.
+      Contact: WhatsApp +54 9 3543 63-6167, Email mavibeauty25@gmail.com.
+      Location: Argentina.
+    </p>
+  </section>
+
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
